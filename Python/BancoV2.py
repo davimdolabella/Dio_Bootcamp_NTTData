@@ -171,6 +171,7 @@ def Criar_Usuario(usuarios):
             cpf = input('Informe o CPF: ')
             usuario = Filtrar_Usuario(cpf, usuarios)
             if usuario:
+                os.system('cls')
                 print('Esse CPF já foi Utilizado.')
             else:
                 nome = input("Informe o nome completo: ")
